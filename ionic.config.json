@@ -1,0 +1,8 @@
+{
+  "name": "frameoftb",
+  "app_id": "0576907f",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
