@@ -30,7 +30,10 @@ export class HomePage {
   }
 
   itemSelected(item: string) {
+<<<<<<< HEAD
     console.log("Selected Item", item);
+=======
+>>>>>>> master
     this.navCtrl.push(DetailPage, {
       item: item
     });
