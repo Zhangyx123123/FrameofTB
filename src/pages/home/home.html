@@ -4,10 +4,11 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list inset>
-    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-      {{ item }}
+<ion-content padding>
+  <p>
+    <button ion-button color="dark" round icon-start (click)="run()">
+      <ion-icon name='construct' is-active="false"></ion-icon>
+      Tools
     </button>
-  </ion-list>
+  </p>
 </ion-content>
