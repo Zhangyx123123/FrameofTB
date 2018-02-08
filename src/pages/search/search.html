@@ -14,6 +14,15 @@
 
 
 <ion-content>
+  <ion-item-group>
+    <ion-item-divider color="dark">Available Organisation Unit</ion-item-divider>
+    <ion-item>Angola</ion-item>
+    <ion-item>Argentina</ion-item>
+    <ion-item>Armenia</ion-item>
+    <ion-item>Australia</ion-item>
+    <ion-item>Austria</ion-item>
+  </ion-item-group>
+
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
       {{ item }}
