@@ -14,18 +14,49 @@
 
 
 <ion-content>
-  <ion-item-group>
-    <ion-item-divider color="dark">Available Organisation Unit</ion-item-divider>
-    <ion-item>Angola</ion-item>
-    <ion-item>Argentina</ion-item>
-    <ion-item>Armenia</ion-item>
-    <ion-item>Australia</ion-item>
-    <ion-item>Austria</ion-item>
-  </ion-item-group>
+  <form (submit)="doSubmit($event)" [formGroup]="langForm">
+    <ion-list radio-group formControlName="langs">
 
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-      {{ item }}
+      <ion-list-header color="dark">
+        Available Organisation Unit
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>A</ion-label>
+        <ion-radio value="golang" checked="true"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>B</ion-label>
+        <ion-radio value="rust"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>C</ion-label>
+        <ion-radio value="python"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>D</ion-label>
+        <ion-radio value="ruby"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>E</ion-label>
+        <ion-radio value="clojure"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>F</ion-label>
+        <ion-radio value="java"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>G</ion-label>
+        <ion-radio value="php"></ion-radio>
+      </ion-item>
+    </ion-list>
+
+  </form>
+
+  <div>
+    <button ion-button color="dark" round icon-start (click)="post()">
+      <<ion-icon ios="ios-send" md="md-send"></ion-icon>
+      Send
     </button>
-  </ion-list>
+  </div>
 </ion-content>
